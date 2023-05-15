@@ -12,8 +12,17 @@ Then whenever you want to start your server, run the following in your project's
 
 `$ npx http-server frontend -c 1 -p 5050`
 
+### The Backend
 
-## Frontend
+To run the backend server, simply run `yarn start` in the `backend` directory. This will start the backend.
+
+To view the API interface for the backend you can navigate to the base URL of the backend (e.g. `http://localhost:5005`). This will list all of the HTTP routes that you can interact with.
+
+### Browser Compatibility
+ * Google Chrome
+
+
+## Information
 
 Build a frontend for popular professional social networking tool [LinkedIn](https://linkedin.com/).
 
@@ -129,12 +138,3 @@ Each job should display:
 
 #### Push Notifications
 * Users can receive push notifications when a user they watch posts a job. To know whether someone or not has posted a job, you must "poll" the server (i.e. intermittent requests, maybe every second, that check the state). You can implement this either via browser's built in notification APIs or through your own custom built notifications/popups. The notifications are not required to exist outside of the webpage.
-
-### The Backend
-
-To run the backend server, simply run `yarn start` in the `backend` directory. This will start the backend.
-
-To view the API interface for the backend you can navigate to the base URL of the backend (e.g. `http://localhost:5005`). This will list all of the HTTP routes that you can interact with.
-
-### Browser Compatibility
- * Google Chrome
