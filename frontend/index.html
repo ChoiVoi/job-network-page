@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- You can add your styles and scripts here -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/global.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <main role="main" class="d-flex align-items-center justify-content-center bg-light" style="min-height: calc(100vh - 82px);">
+        <div id="section-logged-in" class="hide">
+            <!-- Nav bar -->
+            <nav class="navbar navbar-expand navbar-dark bg-secondary">
+                <div class="container-fluid">
+                  <ul class="navbar-nav">
+                    <li class="nav-item"> <button id="create-job-fake" class="nav-link btn btn-secondary">Create Post</button> </li>
+                    <li class="nav-item"> <button class="View-profile nav-link btn btn-secondary" id="view-profile-of-user">View Profile</button> </li>
+                    <li class="nav-item"> <button class="nav-link btn btn-secondary" id="nav-home">Home</button> </li>
+                    <li class="nav-item"> <button id="logout" class="nav-link btn btn-secondary">Logout</button> </li>
+                  </ul>
+                </div>
+            </nav>
+            <!-- Logged in pages -->
+            <div id="page-profile" class="hide">
+                <div id="user-profile"></div>
+            </div>
+            <div id="page-home">
+                <input type="text" id="watch-email-input" placeholder="User's email to follow">
+                <button id="watch-email-button">Watch</button>
+                <div id="feed-items"></div>
+                <br />
+            </div>
+            <div id = "create-job" class = "hide">
+                <h3>CREATE A JOB</h3>
+                title: <input id = "title" type = "text" value = ""><br />
+                image: <input id = "image" type = "file" accept ="image/png, image.jpg, image.jpeg"><br />
+                description: <input id = "description" type = "text" value = ""><br />
+                <button id = "post-job">POST</button>
+            </div>
+            <div id = "comments-page" class = "hide">
+                <div id = "see-comments">
+                    <h3>COMMENTS</h3>
+                    <div id = list-of-comments></div>
+                    <input id = "comments-text-box" type = "textarea" placeholder= "leave your comments">
+                    <button id = "leave-comments-button">Leave comments</button>
+                </div>
+            </div>
+            <div id = "edit-or-delete-job" class = "hide">
+                <h3>EDIT OR DELETE JOB</h3>
+                new title: <input id = "new-title" type = "text" value = ""><br />
+                new image: <input id = "new-image" type = "file" accept ="image/png, image.jpg, image.jpeg"><br />
+                new description: <input id = "new-description" type = "text" value = ""><br />
+                <button id = "edit-post">EDIT POST</button>
+                <button id = "delete-post">DELETE POST</button>
+            </div>
+            <br />
+        </div>
+        <div id="section-logged-out">
+            <!-- LOGIN -->
+            <div id = "page-login" class="show">
+                <h1>Login</h1>
+                <div class="form-group">
+                Email: <input class="form-control" id = "login-email" type = "text" value = ""><br />
+                Password: <input class="form-control" id = "login-password" type = "password" value = ""><br />
+                <button id = "login-button">Login</button>
+                <button class = "nav-item" id = "nav-register">Register</button>
+                </div>
+            </div>
+            <div id="page-register" class="hide">
+                <h1>Register</h1>
+                <div class="form-group">
+                    Email: <input class="form-control" id="register-email" type="text" value=""><br />
+                    Name: <input class="form-control" id="register-name" type="text" value=""><br />
+                    Password: <input class="form-control" id="register-password" type="password" value=""><br />
+                    Confirm Password: <input class="form-control" id="register-confirm-password" type="password" value=""><br />
+                    <button id="register-button">Register</button>
+                    <button class = "nav-item" id = "nav-login">Back to login</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="src/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

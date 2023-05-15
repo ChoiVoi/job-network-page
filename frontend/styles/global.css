@@ -1,0 +1,59 @@
+/* base styles, feel free to edit */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial;
+}
+
+.hide {
+    display: none;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+.card {
+    width: 18rem;
+    margin-left: 10px;
+}
+
+.user-info {
+    max-width: 400px;
+}
+
+.user-link {
+    display: inline-block;
+    background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.watchers-count {
+    display: inline-block;
+}
+
+.user-link:hover,
+.user-link:focus {
+  color: darkblue;
+  outline: none;
+}
+
+.update-profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feed-items {
+    display: none;
+    flex-direction: column;
+}
+  
