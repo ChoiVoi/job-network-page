@@ -54,10 +54,6 @@ This focuses on the basic user interface to register and log in to the site.
  * Whenever the frontend or backend produces an error, there shall be an error popup on the screen with a message (either a message derived from the backend error response, or one meaningfully created on the frontend).
  * This popup can be closed/removed/deleted by pressing an "x" or "close" button.
 
-### Milestone 2 - Basic Feed (14%)
-
-Milestone 2 focuses on fetching feed data from the API. A feed and it's associated content should only be accessible to logged in users.
-
 #### Basic Feed
 
 The application should present a "feed" of user content on the home page derived `GET /job/feed`. Note that the feed will only return information from people that the logged in user is watching.
@@ -91,11 +87,6 @@ Each job should display:
 
 #### Liking a job
 * A user can like a job on their feed and trigger a api request (`PUT /job/like`)
-* For this milestone, it's OK if the like doesn't appear/update until the page is refreshed.
-
-#### Feed Pagination
-* Users can page between sets of results in the feed using the position token with (`GET /job/feed`).
-* Note: You will automatically receive marks for this section if you end up implementing the infinite scroll alternative in a later milestone.
 
 #### Viewing others' profiles
 * Let a user click on a user's name from a job, like, or comment, and be taken to a profile screen for that user.
