@@ -1,10 +1,25 @@
 # Vanilla JS
 
+## Getting started
+
+### The Frontend
+
+To do this, run the following command once on your machine:
+
+`$ npm install --global http-server`
+
+Then whenever you want to start your server, run the following in your project's root folder:
+
+`$ npx http-server frontend -c 1 -p 5050`
+
+
 ## Frontend
 
 Build a frontend for popular professional social networking tool [LinkedIn](https://linkedin.com/).
 
 The requirements describe a series of **screens**. Screens can be popups/modals, or entire pages. The use of that language is so that you can choose how you want it to be displayed. A screen is essentially a certain state of your web-based application.
+
+
 
 ### Registration & Login
 
@@ -114,18 +129,6 @@ Each job should display:
 
 #### Push Notifications
 * Users can receive push notifications when a user they watch posts a job. To know whether someone or not has posted a job, you must "poll" the server (i.e. intermittent requests, maybe every second, that check the state). You can implement this either via browser's built in notification APIs or through your own custom built notifications/popups. The notifications are not required to exist outside of the webpage.
-
-## Getting started
-
-### The Frontend
-
-To do this, run the following command once on your machine:
-
-`$ npm install --global http-server`
-
-Then whenever you want to start your server, run the following in your project's root folder:
-
-`$ npx http-server frontend -c 1 -p 5050`
 
 ### The Backend
 
